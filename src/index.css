@@ -11,4 +11,37 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.mainContainer
+{
+  background: rgb(194, 142, 142);
+margin-left: 20vw;
+ width: 60vw;
+ height: 70vh;
 
+}
+.labelname
+{
+  color: rgb(20, 2, 1);
+  place-content: center;
+  margin:20vw;
+  font-size:25px ;
+}
+.divinside
+{
+  display: inline;
+}
+.enter
+{
+ margin-left:20vw;
+ padding: 11px;
+ border-radius: 18px;
+ border:rgb(155, 88, 79) 2px solid;
+}
+.enter[type="text"]
+{
+  font-size: 15px;
+}
+.addButton
+{
+ font-size:20px;
+}
