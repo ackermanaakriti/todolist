@@ -28,7 +28,7 @@ margin-left: 20vw;
 }
 .divinside
 {
-  display: inline;
+  display: inline-flex;
 }
 .enter
 {
@@ -44,4 +44,23 @@ margin-left: 20vw;
 .addButton
 {
  font-size:20px;
+}
+.showContainer
+{
+  background: rgb(104, 58, 58);
+}
+.showContainer li{
+color: whitesmoke;
+height: 30px;
+place-items: center;
+justify-content: center;
+list-style: none;
+}
+.mylists button{
+  margin-left: 20px;
+  border-radius: 20px;
+}
+.mylists
+{
+  
 }

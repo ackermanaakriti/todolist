@@ -6,22 +6,25 @@ import{faXmarkCircle} from '@fortawesome/free-solid-svg-icons'
  function Todocomp() {
     const [enteredTask,SetMytask] = useState('');
     const [task_stored,SetStore]= useState([]);
+    const SetmyValueNull=()=>
+    {
+      console.log('hwllo world');
+   SetMytask([]);
+   
+    }
     const TextUpdate=(e)=>
     { 
     SetMytask(e.target.value);
     }
-    
     const Addvalue=()=>
-    {
-        console.log("hello ello");
+    {  
   SetStore((olditems)=>
   {
       return[...olditems,enteredTask]
   })
-  SetMytask("");
-    }
-    
-  return (
+  SetMytask(""); }
+ 
+    return (
     <>
     <h1>My todo list</h1>
     <div className="mainContainer">
@@ -33,18 +36,12 @@ import{faXmarkCircle} from '@fortawesome/free-solid-svg-icons'
           <div  className="showContainer">
               {
               task_stored.map((mytasks)=>{
-             
-                return <div>  <li>{mytasks}</li> <button><FontAwesomeIcon icon={faXmarkCircle}/></button></div>
-              }
-              )
-            
-            
-               }
+                return <div className="mylists">  <li>{mytasks}</li> <button onClick={SetmyValueNull}><FontAwesomeIcon icon={faXmarkCircle}/></button></div>
+              }) }'
          </div>
-          </div>
+         </div>
       </div>
-    
-    </>
+     </>
   )
 }
 export default Todocomp;
