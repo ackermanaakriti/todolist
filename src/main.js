@@ -15,8 +15,8 @@ const Mymain=( props)=>
           <h3>your todo list</h3>
           <div  className="showContainer">
               {
-              props.value.stored.map((mytasks)=>{
-                return <div className="mylists">  <li className="myfirstli">{mytasks}</li> <button onClick={props.func.func1}><FontAwesomeIcon icon={faXmarkCircle}/></button></div>
+              props.value.stored.map((mytasks,index)=>{
+                return <div key={index} className="mylists">  <li  className="myfirstli">{mytasks}</li> <button onClick={()=>props.func.func1(index)}><FontAwesomeIcon icon={faXmarkCircle} /></button></div>
               }) }'
          </div>
          </div>
